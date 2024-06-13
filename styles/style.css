@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+.header-nav {
+    background-color: royalblue;
+    padding: 1em;
+    color: whitesmoke
+}
+
+.header-nav h2 {
+    letter-spacing: .3rem;
+}
+
+.main-container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container h1 {
+    font-size: 3.5rem;
+    letter-spacing: .3rem;
+}
+
+.main-container button {
+    font-size: 1.2rem;
+    padding: .5em 1.5em;
+    margin: 0 .5em;
+    letter-spacing: .3rem;
+    border-radius: 16px;
+    border: 2px solid #010101;
+}
+
+.main-container #admin-btn {
+    padding: .5em 2.5em;
+}
+
+/* Side Navigation */
+
+.sidenav {
+    /* min-height: 10%; */
+    max-width: 3%;
+    position: absolute;
+    top: 32%;
+    margin-left: .5em;
+    background-color: royalblue;
+    box-shadow: black;
+    display: block;
+    border-radius: 30px;
+}
+
+.sidenav a {
+    display: flex;
+    justify-content: left;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+
+.sidenav a svg {
+    height: 100%;
+    width: 2.3em;
+    margin: 1em auto;
+}
+
+.sidenav a #max-size {
+    height: 100%;
+    width: 3.4em;
+    margin: 1em auto;
+}
+
+/* Registration Form */
+
+.account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.account-form {
+    /* min-height: ; */
+    margin: 4em auto;
+    background-color: royalblue;
+    border-radius: 30px;
+    padding: 2em 5em 5.5em 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-form .account-header h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+.account-form label {
+    font-size: 1.16rem;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.account-form input {
+    margin: .3em;
+    border-radius: 16px;
+    padding: .5em 1em;
+    border: 1px solid #010101;
+    width: 16em;
+}
+
+.account-form label {
+    margin-left: 1em;
+}
+
+.account-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+
+}
+
+.account-details {
+    margin-top: .5em;
+    display: flex;
+}
+
+.sex-container {
+    display: flex; 
+    flex-direction: column;
+    margin-left: .5em;
+}
+.sex-container .sex-option {
+    max-width: 10em;
+    padding: .5em .8em;
+    border-radius: 16px;
+    border: 1px solid #010101;
+}
+
+.bday-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.2em;
+}
+
+.bday-container input {
+    max-width: 9em;
+    padding: .5em .5em;
+    margin: 0;
+}
+
+#submit {
+    margin-top: 2em;
+}
+
+/* Log in Form */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    outline: none;
+    width: 20em;
+}
+
+.login-container input {
+    width: 19em;
+}
+
+#login {
+    margin-top: 1em;
+}
+
+.login-bottom-nav {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.login-bottom-nav span, span a {
+    color: whitesmoke;
+    font-size: 1rem;
+}
