@@ -57,7 +57,7 @@ body {
     top: 32%;
     margin-left: .5em;
     background-color: royalblue;
-    box-shadow: black;
+    box-shadow: 5px -1px 10px gray;
     display: block;
     border-radius: 30px;
 }
@@ -97,9 +97,10 @@ body {
     margin: 4em auto;
     background-color: royalblue;
     border-radius: 30px;
-    padding: 2em 5em 5.5em 5em;
+    padding: 2em 7em 5.5em 7em;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 10px gray;
 }
 
 .account-form .account-header h3 {
@@ -117,9 +118,9 @@ body {
 .account-form input {
     margin: .3em;
     border-radius: 16px;
-    padding: .5em 1em;
+    padding: .5em 1.5em;
     border: 1px solid #010101;
-    width: 16em;
+    width: 17em;
 }
 
 .account-form label {
@@ -143,27 +144,41 @@ body {
     flex-direction: column;
     margin-left: .5em;
 }
-.sex-container .sex-option {
+.sex-container #sex {
     max-width: 10em;
-    padding: .5em .8em;
+    padding: .58em .8em;
     border-radius: 16px;
     border: 1px solid #010101;
+    background-color: #ffffff;
+    margin: 0;
 }
 
 .bday-container {
     display: flex;
     flex-direction: column;
-    margin-left: 2.2em;
+    margin-left: 1.7em;
 }
 
 .bday-container input {
-    max-width: 9em;
-    padding: .5em .5em;
+    max-width: 9.3em;
+    padding: .5em .45em; 
     margin: 0;
 }
 
 #submit {
     margin-top: 2em;
+    padding: .5em;
+    border-radius: 16px;
+    border: 1px solid #010101;
+    background-color: #ffffff;
+}
+
+#submit:hover {
+    background-color: lightgreen;
+}
+
+#errormsg {
+    margin-top: 1.5em;
 }
 
 /* Log in Form */
@@ -182,6 +197,17 @@ body {
 
 #login {
     margin-top: 1em;
+    margin-left: .3em;
+    background-color: #ffffff;
+    padding: .5em;
+    border-radius: 16px;
+    border: 1px solid #010101;
+    max-width: 19em;
+    text-align: center;
+}
+
+#login:hover {
+    background-color: lightgreen;
 }
 
 .login-bottom-nav {
@@ -195,4 +221,22 @@ body {
 .login-bottom-nav span, span a {
     color: whitesmoke;
     font-size: 1rem;
+}
+
+/* Employee Profile */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+.emp-profile {
+    max-width: 50em;
+    background-color: royalblue;
+    margin: 0 auto;
+    padding: 20em;
+    border-radius: 16px;
+    box-shadow: 5px 5px 10px gray;
+    display: grid;
 }
