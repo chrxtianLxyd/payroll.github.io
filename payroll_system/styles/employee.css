@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("forms.css");
+@import url("nav.css");
+@import url("employee.css");
+
+
+/*  */
+/* Employee Profile */
+.profile-container {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    height: 100%;
+}
+
+.emp-profile {
+    width: 100vw;
+    max-width: 90svh;
+    height: 75svh;
+    background-color: royalblue;
+    padding: 10rem;
+    border-radius: 35px;
+    box-shadow: 5px 5px 10px gray;
+    display: grid;
+    place-content: center;
+}
+
+.emp-grid {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: .8vw;
+    padding: 5.5em;
+}
+
+.emp-box {
+    background-color: #ffffff;
+    width: 10.5vw;
+    max-width: 20em;
+    height: 20dvh;
+    text-align: center;
+    border-radius: 28px;
+    box-shadow: 5px 4px 2px #353535;
+    font-size: 1vw;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    padding: 1em;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+}
+
+.emp-box > h4 {
+    font-size: calc(1.2vw + .2rem);
+}
+
+.emp-grid :only-child {
+    grid-column-start: 2;
+}
+
+
+
+
+.emp-grid :nth-child(1) {
+    grid-column: span 3;
+}
+
+.emp-grid :nth-child(2) {
+    grid-column: span 1;
+}
+
+.emp-grid :nth-child(3) {
+    grid-column: span 1;
+}
+
+.emp-grid :nth-child(1) {
+    grid-column: span 3;
+}

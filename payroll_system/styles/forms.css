@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("forms.css");
+@import url("nav.css");
+@import url("employee.css");
+
+
+
+.account-container {
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    margin-top: 2.5em;
+}
+
+
+/* Log in Form */
+.login-form {
+    width: 28em;
+    max-width: 36%;
+    height: 40%;
+    min-height: 25em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    background-color: royalblue;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.login-form .account-header h3 {
+    font-size: calc(1vw + .6rem);
+    text-align: center;
+    letter-spacing: .3rem;
+    margin-bottom: 1.3em;
+}
+
+.login-form label {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-left: 1em;    
+}
+
+.login-form input {
+    border-radius: 16px;
+    border: 1px solid #010101;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-bottom: 2em;
+}
+
+.login-container input {
+    font-size: .8rem;
+    text-align: start;
+    width: 100%;
+    height: 20%;
+    padding: 1em;
+    margin-bottom: .8em;
+}
+
+#login {
+    margin-top: 1em;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #010101;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    height: 20%;
+    padding: .425em .5em;
+}
+
+#login:hover {
+    background-color: lightgreen;
+}
+
+.login-bottom-nav {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    text-align: center;
+    font-size: .975rem;
+}
+
+.login-bottom-nav span, span a {
+    color: whitesmoke;
+    font-size: .925rem;
+}
+
+/* 
+//////////////////
+//////////////////
+//////////////////
+*/
+
+/* Registration Form */
+.account-form {
+    width: 27vw;
+    max-width: 28%;
+    height: 80svh;
+    min-height: 65svh;
+    background-color: royalblue;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);  
+    display: grid;
+    place-content: center;
+    place-items: center;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.account-form .account-header h3 {
+    font-size: calc(2vw + .2rem);
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+.account-form label {
+    font-weight: 500;
+    letter-spacing: normal;
+    margin-left: 1em;
+    font-size: calc(1vw + .2rem);
+}
+
+.account-name {
+    width: 65%;
+}
+
+.account-name input {
+    width: 100%;
+    height: calc(3svh + .9em);
+    /* min-height: em; */
+    border-radius: 1vw;
+    border: 1px solid #010101;
+    padding: .525em;
+    font-size: calc(.725vw + .3rem)
+}
+
+.account-details {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.account-details label {
+    font-size: calc(1vw + .2rem);
+}
+
+.account-details input {
+    width: 100%;
+    height: calc(3svh + .9em);
+    padding: .425em 1em;
+    font-size: calc(.725vw + .3rem);
+    border-radius: 1vw;
+}
+
+.sex-container {
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+}
+
+
+.sex-container #sex {
+    width: 100%;
+    height: calc(3svh + .9em);
+    /* padding: .425em 1em; */
+    border-radius: 1vw;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin: 0;
+    font-size: calc(.725vw + .3rem);
+}
+
+.bday-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.bday-container label {
+    margin-right: 1em;
+}
+
+.bday-container input {
+    width: 85%;
+    /* padding: .425em .5em; */
+    padding-right: .2em;
+    border-radius: 16px;
+    border: 1px solid black;
+    margin: 0;
+}
+
+#submit {
+    width: 65%;
+    height: calc(3.5svh + .8em);
+    /* padding: .5em 0em; */
+    margin-top: 1.5em;
+    border-radius: 1vw;
+    border: 1px solid #010101;
+    background-color: #ffffff;
+    font-weight: 600;
+    font-size: calc(.9vw + .1rem);
+}
+
+#submit:hover {
+    background-color: lightgreen;
+}
+
+#errormsg {
+    margin-top: .5vw;
+    font-size: 1vw;
+}
+
