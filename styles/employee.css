@@ -2,6 +2,7 @@
 @import url("forms.css");
 @import url("nav.css");
 @import url("employee.css");
+@import url("predefined.css");
 
 
 /*  */
@@ -14,12 +15,10 @@
 }
 
 .emp-profile {
-    width: 85%;
-    max-width: 70vw;
-    height: 80svh;
+    width: 42vw;
+    height: 73svh;
     min-height: 70svh;
     background-color: royalblue;
-    padding: 10rem;
     border-radius: 35px;
     box-shadow: 5px 5px 10px gray;
     display: grid;
@@ -27,43 +26,45 @@
 }
 
 .emp-grid {
-    width: auto;
+    width: 100%;
     display: grid;
     place-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.emp-grid h4 {
+    font-size: calc(1vw + .1rem);
 }
 
 .emp-box {
     background-color: #ffffff;
-    width: 25svh;
-    max-width: 20em;
-    height: 40svh;
+    width: 15vw;
+    max-width: 11vw;
+    height: 20svh;
+    min-height: 15svh;
     text-align: center;
     border-radius: 28px;
     box-shadow: 5px 4px 2px #353535;
     font-size: 1vw;
-    display: grid;
-    place-content: center;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1em;
-    grid-template-rows: subgrid;
-    grid-row: span 5;
 }
 
-.emp-box > h4 {
-    font-size: calc(1.2vw + .2rem);
+.emp-box h4 {
+    font-size: calc(1vw + .2rem);
 }
 
 .emp-grid :only-child {
-    grid-column-start: 2;
+    grid-column-end: 2;
 }
-
-
-
 
 .emp-grid :nth-child(1) {
     grid-column: span 3;
+    grid-row-end: 2;
 }
 
 .emp-grid :nth-child(2) {
@@ -76,4 +77,35 @@
 
 .emp-grid :nth-child(1) {
     grid-column: span 3;
+}
+
+.box-1 {
+    overflow: hidden;
+}
+
+#file {
+    all: unset;
+    width: 130px;
+    font-size: .5vw;
+    border: 1px solid black;
+    box-sizing: border-box;
+    outline: none;
+    color: transparent;
+    width: 3.5%;
+    position: absolute;
+    bottom: 58%;
+    right: 55%;
+}
+
+/* #pfp {
+    width: auto;
+    float: right;
+} */
+
+#profile-pic {
+    all: unset;
+}
+
+.time {
+    transition: .3s;
 }

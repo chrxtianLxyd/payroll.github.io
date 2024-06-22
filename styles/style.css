@@ -2,6 +2,7 @@
 @import url("forms.css");
 @import url("nav.css");
 @import url("employee.css");
+@import url("table.css");
 
 * {
     margin: 0;
@@ -20,7 +21,6 @@ body {
     font-style: normal;
     width: 100%;
     height: 100%;
-    border: 5px solid black;
 }
 
 .header-nav {
@@ -46,9 +46,9 @@ body {
     height: 90%;
 }
 
-.sub-container .sub-a, .sub-b {
+/* .sub-container .sub-a, .sub-b {
     border: 2px solid black;
-}
+} */
 
 .sub-a {
     flex: 1;

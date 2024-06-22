@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payslip {
+    width: 30em;
+    height: 50em;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td, tr {
+    border: 1px solid black;
+}

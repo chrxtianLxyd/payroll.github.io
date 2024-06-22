@@ -1,0 +1,30 @@
+/* pre-defined */
+.dp-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-9 {
+    flex: 9;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.size-100 {
+    width: 100%;
+    height: 100%;
+}
+
+.size-90 {
+    width: 90%;
+    height: 90%;
+}
+
