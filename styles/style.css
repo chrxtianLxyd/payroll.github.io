@@ -1,25 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("forms.css");
+@import url("nav.css");
+@import url("employee.css");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', 'sans-serif';
     font-weight: 300;
     font-style: normal;
-
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
 }
 
 .header-nav {
+    width: 100%;
+    height: 10%;
     background-color: royalblue;
-    padding: 1em;
-    color: whitesmoke
+    color: whitesmoke;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .header-nav h2 {
     letter-spacing: .3rem;
+    margin-left: 1em;
+    font-size: calc(1vw + 1rem);
+    padding: .2em 0em;
+}
+
+.sub-container {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.sub-container .sub-a, .sub-b {
+    border: 2px solid black;
+}
+
+.sub-a {
+    flex: 1;
+    width: 100%;
+    max-width: 7em;
+    height: 100%;
+}
+
+.sub-b {
+    width: 100%;
+    height: 100%;
+    flex: 15;
+    display: grid;
+    place-content: center;
+    place-items: center;
+
 }
 
 .main-container {
@@ -46,197 +91,4 @@ body {
 
 .main-container #admin-btn {
     padding: .5em 2.5em;
-}
-
-/* Side Navigation */
-
-.sidenav {
-    /* min-height: 10%; */
-    max-width: 3%;
-    position: absolute;
-    top: 32%;
-    margin-left: .5em;
-    background-color: royalblue;
-    box-shadow: 5px -1px 10px gray;
-    display: block;
-    border-radius: 30px;
-}
-
-.sidenav a {
-    display: flex;
-    justify-content: left;
-    margin: 0 auto;
-    padding: .5em;
-}
-
-
-.sidenav a svg {
-    height: 100%;
-    width: 2.3em;
-    margin: 1em auto;
-}
-
-.sidenav a #max-size {
-    height: 100%;
-    width: 3.4em;
-    margin: 1em auto;
-}
-
-/* Registration Form */
-
-.account-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: whitesmoke;
-}
-
-.account-form {
-    /* min-height: ; */
-    margin: 4em auto;
-    background-color: royalblue;
-    border-radius: 30px;
-    padding: 2em 7em 5.5em 7em;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 5px 5px 10px gray;
-}
-
-.account-form .account-header h3 {
-    font-size: 2.2rem;
-    text-align: center;
-    letter-spacing: .3rem;
-}
-
-.account-form label {
-    font-size: 1.16rem;
-    font-weight: 500;
-    letter-spacing: normal;
-}
-
-.account-form input {
-    margin: .3em;
-    border-radius: 16px;
-    padding: .5em 1.5em;
-    border: 1px solid #010101;
-    width: 17em;
-}
-
-.account-form label {
-    margin-left: 1em;
-}
-
-.account-name {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2em;
-
-}
-
-.account-details {
-    margin-top: .5em;
-    display: flex;
-}
-
-.sex-container {
-    display: flex; 
-    flex-direction: column;
-    margin-left: .5em;
-}
-.sex-container #sex {
-    max-width: 10em;
-    padding: .58em .8em;
-    border-radius: 16px;
-    border: 1px solid #010101;
-    background-color: #ffffff;
-    margin: 0;
-}
-
-.bday-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1.7em;
-}
-
-.bday-container input {
-    max-width: 9.3em;
-    padding: .5em .45em; 
-    margin: 0;
-}
-
-#submit {
-    margin-top: 2em;
-    padding: .5em;
-    border-radius: 16px;
-    border: 1px solid #010101;
-    background-color: #ffffff;
-}
-
-#submit:hover {
-    background-color: lightgreen;
-}
-
-#errormsg {
-    margin-top: 1.5em;
-}
-
-/* Log in Form */
-
-.login-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2em;
-    outline: none;
-    width: 20em;
-}
-
-.login-container input {
-    width: 19em;
-}
-
-#login {
-    margin-top: 1em;
-    margin-left: .3em;
-    background-color: #ffffff;
-    padding: .5em;
-    border-radius: 16px;
-    border: 1px solid #010101;
-    max-width: 19em;
-    text-align: center;
-}
-
-#login:hover {
-    background-color: lightgreen;
-}
-
-.login-bottom-nav {
-    display: flex;
-    flex-direction: column;
-    color: whitesmoke;
-    text-align: center;
-    margin-top: 1.5em;
-}
-
-.login-bottom-nav span, span a {
-    color: whitesmoke;
-    font-size: 1rem;
-}
-
-/* Employee Profile */
-.profile-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 5em;
-}
-
-.emp-profile {
-    max-width: 50em;
-    background-color: royalblue;
-    margin: 0 auto;
-    padding: 20em;
-    border-radius: 16px;
-    box-shadow: 5px 5px 10px gray;
-    display: grid;
 }
