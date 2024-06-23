@@ -7,12 +7,20 @@
 
 .payslip {
     width: 30em;
-    height: 50em;
-    border: 1px solid black;
-    border-collapse: collapse;
+    height: 20em;
+    /* border-collapse: collapse; */
     text-align: center;
 }
 
-th, td, tr {
+
+tr th, tr td {
     border: 1px solid black;
+}
+
+table {
+    border: 2px solid black;
+}
+
+.allowance tr th, tr td {
+    border-collapse: collapse;
 }

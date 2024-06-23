@@ -1,5 +1,5 @@
-/// time in and out
-export const timeDisplay = ()=> {
+////time
+const timeDisplay = ()=> {
     const now = new Date();
     const formattedDateTime = now.toLocaleString()
     const currDT = document.getElementById("emp-time").textContent = formattedDateTime
@@ -8,7 +8,7 @@ export const timeDisplay = ()=> {
 window.onload = timeDisplay()
 
 
-export const empTime = ()=> {
+const empTime = ()=> {
     let timeBtn = document.querySelector("#timeBtn")
     if(timeBtn.innerText === "Time In") {
         timeBtn.innerText = ("Time Out")

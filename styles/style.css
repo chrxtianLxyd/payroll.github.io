@@ -36,7 +36,7 @@ body {
 .header-nav h2 {
     letter-spacing: .3rem;
     margin-left: 1em;
-    font-size: calc(1vw + 1rem);
+    font-size: calc(1.2vw + 1rem);
     padding: .2em 0em;
 }
 
