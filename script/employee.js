@@ -1,7 +1,26 @@
-import { timeDisplay } from "./time.js";
-import { empTime } from "./time.js";
+import { createClient } from '@supabase/supabase-js'
 
-export function timeDisplay() {
+const supabaseUrl = 'https://iznwmbeoxqvchvkmczly.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
+
+
+const empName = document.querySelector("#emp-name")
+const empEID = document.querySelector("#emp-id")
+const empPos = document.querySelector("#emp-pos")
+const empSex = document.querySelector("#emp-sex")
+const empBDay = document.querySelector("#emp-bday")
+
+empName.innerText = ("text1")
+empEID.innerText = ("text2")
+empPos.innerText = ("text3")
+empSex.innerText = ("text4")
+empBDay.innerText = ("text5")
+
+
+////time
+
+const timeDisplay = ()=> {
     const now = new Date();
     const formattedDateTime = now.toLocaleString()
     const currDT = document.getElementById("emp-time").textContent = formattedDateTime
@@ -10,7 +29,7 @@ export function timeDisplay() {
 window.onload = timeDisplay()
 
 
-export function empTime() {
+const empTime = ()=> {
     let timeBtn = document.querySelector("#timeBtn")
     if(timeBtn.innerText === "Time In") {
         timeBtn.innerText = ("Time Out")
@@ -22,3 +41,5 @@ export function empTime() {
         timeBtn.style.color = "#000000"
     }
 }
+
+////// START CRUD HERE
