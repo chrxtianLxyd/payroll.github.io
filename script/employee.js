@@ -1,10 +1,3 @@
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = 'https://iznwmbeoxqvchvkmczly.supabase.co'
-const supabaseKey = process.env.SUPABASE_KEY
-const supabase = createClient(supabaseUrl, supabaseKey)
-
-
 const empName = document.querySelector("#emp-name")
 const empEID = document.querySelector("#emp-id")
 const empPos = document.querySelector("#emp-pos")
@@ -19,7 +12,6 @@ empBDay.innerText = ("text5")
 
 
 ////time
-
 const timeDisplay = ()=> {
     const now = new Date();
     const formattedDateTime = now.toLocaleString()
@@ -42,4 +34,24 @@ const empTime = ()=> {
     }
 }
 
-////// START CRUD HERE
+let logForm = document.getElementById("logForm");
+let unameLog = document.getElementById("unameLog");
+let pwordLog = document.getElementById("pwordLog");
+let loginButton = document.getElementById("login");
+
+function validateCredentials(username, password) {
+
+    let employees = [
+        { username: "hey", password: "123" },
+        { username: "hello", password: "321" },
+    ];
+
+    for (let user of storedUsers) {
+        if (user.username === username && user.password === password) {
+            return true; // login success
+        }
+    }   
+
+    return false; // fail
+}
+
